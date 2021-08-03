@@ -1,43 +1,86 @@
 Link to finished codepen: 
 https://codepen.io/sharontsanchez/pen/RwVBqEG
 
-    1. What is Semantic HTML?   
+    1. What is Semantic HTML?
+    Semantic HTML gives meaning to our content. A semantic element clearly describes its meaning to both the browser and the developer. Semantic HTML is important for accessibility, for search engine optimization, for other developers to work alongside with others.
     2. What is HTML used for? 
+    HTML is used to build the structure of our website. 
     3. What is an attribute and where do we put it? 
+    HTML attribute provides additional information about elements. Attributes are specified in the start tag. They come in name/value pairs.
     4. What is the h1 tag used for? How many times should I use it on a page?
+    h1 tag is used for the most important heading on the page. You can only use it once on a page. 
     5. Name two tags that have required attributes
+    Anchor tag and Image tag. 
     6. What do we put in the head of our HTML document? 
+    The head of our HTML document contains meta tags for tracking codes, connecting to other websites, and link tags neccesary to link your CSS
     7. What is an id? 
+    The HTML id attribute is used to specify a unique id for an HTML element. You cannot have more than one element with the same id in an HTML document.
     8. What elements can I add an id to? 
+    The id attribute is a Global Attribute, and can be used on any HTML element.
     9. How many times can I use the same id on a page? 
+    you can only use it once. 
     10. What is a class? 
+    The HTML class attribute is used to specify a class for an HTML element. Multiple HTML elements can share the same class.
     11. What elements can I add a class to? 
+    The class attribute can be used on any HTML element.
     12. How many times can I use the same class on a page? 
+    you can use it multiple times. 
     13. How do I get my link to open in a new tab?
     14. What is the alt attribute in the image tag used for? 
+    alt attribute in the image tag specifies an alternate text for an image. This is an accessibility feature for screen readers and for places with slower connectivity.
     15. How do I reference an id?
+    The id selector uses the id attribute of the HTML element, and is defined with a "#".
     16. What is the difference between a section and a div
+    <section> means that the content inside is grouped and should appear as a entry in an outline of a page whereas <div> does not convey any meaning, aside from any found in its class, lang and title attributes.<section> gathers a specific and strong semantic purpose, where, div has only a generic, non-specific meaning and no semantic purpose.
     17. What is CSS used for? 
+    CSS is used for styling your webpage. 
     18. How to we select an element? Example - every h2 on the page
+    we use CSS rules to select elements on a web page so that we can then style those elements.The element selector selects HTML elements based on their tag names. For example, to select h2{key:value;}
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one. Use a class when you want to consistently style multiple elements throughout the page/site. Use the ID when you have a single element on the page that will take the style.
     20. How do we select classes in CSS?
+    The .class selector selects elements with a specific class attribute. To select elements with a specific class, write a period (.) character, followed by the name of the class.
     21. How do we select a p element with a single class of “human””?
+    p .human{}
     22. What is a parent child selector? When would this be useful? 
+    The ("parent > child") selector selects all elements that are a direct child of the specified element.
     23. How do you select all links within a div with the class of sidebar?
+    .sidebar a{}
     24. What is a pseudo selector?
+    A pseudo-class is a selector that assists in the selection of something that cannot be expressed by a simple selector, for example. :hover.
     25. What do we use the change the spacing between lines?
+    The line-height property specifies the height of a line.
     26. What do we use to change the spacing between letters?
+    The letter-spacing CSS property sets the horizontal spacing behavior between text characters.
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    The text-transform property controls the capitalization of text. text-transform: capitalize
     28. How do I add a 1px border around my div that is dotted and black?
+    div{ border: 1px, dotted, black;}
     29. How do I select everything on the page? 
+    you can select everything on the page with a universal selector like this *{}, and then add key:value pairs neccesary to style the page. 
     30. How do I write a comment in CSS?
+    /* write a comment here */
     31. How do I find out what file I am in, when I am using the command line? 
+    pwd, print work directory will show you what file you are in
     32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls will show you a list of files/folders in my current folder
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    to remove a file: rm is the comman followed by the file name. Once you deploy the command, there is no going back. 
     34. Why should I use version control? 
+    you should use version control to maintain a history of what changes have been made.
     35. How often should I commit to github?
+    Commit every 20 minutes or whenever you make major changes to the files. 
     36. What is the command we would use to push our repo up to github? 
+    git push -u origin firstname-lastname 
     37. Walk me through Lambda's git flow. 
+    cd into the file where you want the forked repo to be stored. 
+    git clone (paste the URL for the forked repo)
+    cd into repo name in the folder that stored it.
+    git checkout -b 'firstname-lastname' this will make a new branch under your name and move into the new branch in order to add changes.
+    code . (opens VS code for you to start working)
+    git add .
+    git commit -m "message to update yourself through each progress within the project"
+    git push -u origin firstname-lastname
 
 Stretch Questions
 
