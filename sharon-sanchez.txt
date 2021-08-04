@@ -41,11 +41,11 @@ https://codepen.io/sharontsanchez/pen/RwVBqEG
     20. How do we select classes in CSS?
     The .class selector selects elements with a specific class attribute. To select elements with a specific class, write a period (.) character, followed by the name of the class.
     21. How do we select a p element with a single class of “human””?
-    p .human{}
+    .human p{key:value;}
     22. What is a parent child selector? When would this be useful? 
     The ("parent > child") selector selects all elements that are a direct child of the specified element.
     23. How do you select all links within a div with the class of sidebar?
-    .sidebar a{}
+    div.sidebar{key:value;}
     24. What is a pseudo selector?
     A pseudo-class is a selector that assists in the selection of something that cannot be expressed by a simple selector, for example. :hover.
     25. What do we use the change the spacing between lines?
@@ -85,8 +85,16 @@ https://codepen.io/sharontsanchez/pen/RwVBqEG
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+    An inline element does not start on a new line.
+    A block-level element always starts on a new line.
     2. What happens when an element is positioned absolutely? 
+    The element is removed from the normal document flow, and no space is created for the element in the page layout. The type of positioning that allows you to literally place any page element exactly where you want it. Absolute positioning is that these elements are removed from the flow of elements on the page. An element with this type of positioning is not affected by other elements and it doesn’t affect other elements.  
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    you can use an inline element. 
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    display block elements: <address>, <footer>, <h1> through <h6>, <header>, <nav>, <p>
+    display inline elements: <a>, <button>, <img>, <span>
+    display inline-block: <img>, <input> and <button>
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
-
+    The box model places all html elements into boxes. The make-up of each box is the content (text or image), padding (blank space around the content), border, and margin (blank space around the border). 
+    The CSS default box model takes element dimensions that you’ve gone to the trouble of formally declaring (“this box should be 100px wide and 100px tall”), and dumps padding and borders on top of them. The result is that tightly spaced elements are constantly prone to overlapping onto each other and breaking entire layout flows. box-sizing: border-box is the fix of the box model, box-sizing: border-box includes padding and borders in an element’s width.
